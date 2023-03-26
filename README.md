@@ -65,13 +65,13 @@ DCT
 ├── ...
 ```
 
-- Preprocess Data
+- Preprocess data
 
 ```
 python preprocess_data.py
 ```
 
-- Download pretrained [yolov4-p7 model](https://drive.google.com/file/d/18fGlzgEJTkUEiBG4hW00pyedJKNnYLP3/view?usp=sharing) and put it to ```./pretrained/```
+- Download pretrained [yolov4-p7 model](https://drive.google.com/file/d/18fGlzgEJTkUEiBG4hW00pyedJKNnYLP3/view?usp=sharing) and put it into ```./pretrained/```
 
 
 ## Training
