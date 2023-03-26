@@ -1,0 +1,10 @@
+# train and val datasets (image directory or *.txt file with image paths)
+train: ./data/gwhd_2021/train.txt  # 3.6k images
+val: ./data/gwhd_2021/val.txt  #  1.4K images
+test: ./data/gwhd_2021/test.txt  # 1.3K images
+
+# number of classes
+nc: 1
+
+# class names
+names: ['wheat']
