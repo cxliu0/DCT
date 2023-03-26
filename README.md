@@ -23,7 +23,7 @@ Huazhong University of Science and Technology, China
 ## Installation
 
 [![Python](https://img.shields.io/badge/python-3.7%20tested-brightgreen)](https://www.python.org/)
-[![Pytorch](https://img.shields.io/badge/pytorch-1.4.0%2F1.10.0%20tested-brightgreen)](https://pytorch.org/)
+[![Pytorch](https://img.shields.io/badge/pytorch-1.10.0%20tested-brightgreen)](https://pytorch.org/)
 
 - Set up environment
 
@@ -50,7 +50,7 @@ pip install -r requirements/build.txt
 
 ## Data Preparation
 
-- Download [GLobal Wheat Head Detection Dataset 2021 (GWHD 2021)](https://www.kaggle.com/datasets/bendvd/global-wheat-challenge-2021). We expect the direcory structure to be as follow:
+- Download [Global Wheat Head Detection Dataset 2021 (GWHD 2021)](https://www.kaggle.com/datasets/bendvd/global-wheat-challenge-2021). We expect the direcory structure to be as follow:
 
 ```
 DCT
@@ -92,22 +92,25 @@ sh train_dct.sh
 ```
 
 
-## Inference
+## Evaluation
 
-- Modify test.sh
-```
-/path/to/model_config ---> modify it to the path of model config, e.g., ./configs/faster_rcnn/faster_rcnn_r50_fpn_1x_voc_oamil.py
+We implement the evaluation of ADA following [Global Wheat Challenge 2021 (GWC 2021)](https://www.aicrowd.com/challenges/global-wheat-challenge-2021). Note that the tested ADA of this repository seems slightly lower than the official one.
 
-/path/to/model_checkpoint ---> modify it to the path of model checkpoint
-```
+- Modify test_ADA.sh
+
+```weights```: modify it to the path of your locally trained model
+
+Alternatively, pretrained DCT model is available at [Google Drive](https://drive.google.com/file/d/1Q0YqpJticAv2e_zxhovyOBc8HMwHU7gB/view?usp=sharing).
+
 
 - Run
 ```
-sh test.sh
+sh test_ADA.sh
 ```
 
 ## Citation
 
+If you find this work or code useful for your research, please consider citing:
 ```
 @article{liu2022dct,
   title = {Dynamic Color Transform Networks for Wheat Head Detection},
@@ -118,7 +121,7 @@ sh test.sh
 
 @INPROCEEDINGS{liu2021dct,
   author={Liu, Chengxin and Wang, Kewei and Lu, Hao and Cao, Zhiguo},
-  booktitle={Proceeding of the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)}, 
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)}, 
   title={Dynamic Color Transform for Wheat Head Detection}, 
   year={2021},
   pages={1278-1283},
