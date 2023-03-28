@@ -20,6 +20,8 @@ Huazhong University of Science and Technology, China
 - We won 2nd Place in [Global Wheat Challenge 2021](https://www.aicrowd.com/challenges/global-wheat-challenge-2021) based on DCT
 - DCT is also applicable to other vision tasks, e.g., crowd counting
 
+![dct](figures/dct.png)
+
 ## Installation
 
 [![Python](https://img.shields.io/badge/python-3.7%20tested-brightgreen)](https://www.python.org/)
@@ -100,13 +102,19 @@ We implement the evaluation of ADA following [Global Wheat Challenge 2021 (GWC 2
 
 ```weights```: modify it to the path of your locally trained model
 
-Alternatively, pretrained DCT model is available at [Google Drive](https://drive.google.com/file/d/1Q0YqpJticAv2e_zxhovyOBc8HMwHU7gB/view?usp=sharing).
-
-
 - Run
 ```
 sh test_ADA.sh
 ```
+
+## Pretrained models (Tested on the GWHD2021 Dataset)
+
+We also provide pretrained DCT models. You can download the models if you do not want to train DCT.
+
+|       DCT Type     |    DCT Arch     |    Val  ADA    |    Test ADA    |  Weights  |
+| :----------------: | :-------------: | :------------: | :------------: | :-------: | 
+|     Regression     |     ResNet18    |     0.787      |     0.629      | [regDCT.pt](https://drive.google.com/file/d/1Q0YqpJticAv2e_zxhovyOBc8HMwHU7gB/view?usp=sharing)  |
+|    Classification  |     ResNet18    |     0.782      |     0.630      | [clsDCT.pt](https://drive.google.com/file/d/1v6fxjvhyPFV_x7r59UC2Pl6zUhKkKHR8/view?usp=sharing)  |
 
 ## Citation
 
