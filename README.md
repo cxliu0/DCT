@@ -78,7 +78,7 @@ python preprocess_data.py
 
 ## Training
 
-We follow a two-step training stretegy.
+We follow a two-step training strategy.
 
 - Step 1: train a baseline Scaled-YOLOv4 model
 
@@ -96,7 +96,7 @@ sh train_dct.sh
 
 ## Evaluation
 
-We implement the evaluation of ADA following [Global Wheat Challenge 2021 (GWC 2021)](https://www.aicrowd.com/challenges/global-wheat-challenge-2021). Note that the tested ADA of this repository seems slightly lower than the official one.
+We implement the evaluation of ADA following [Global Wheat Challenge 2021 (GWC 2021)](https://www.aicrowd.com/challenges/global-wheat-challenge-2021). Note that the tested ADA in this repository seems slightly lower than the official one.
 
 - Modify test_ADA.sh
 
@@ -107,7 +107,7 @@ We implement the evaluation of ADA following [Global Wheat Challenge 2021 (GWC 2
 sh test_ADA.sh
 ```
 
-## Pretrained models (Tested on the GWHD2021 Dataset)
+## Pretrained models (Tested on the GWHD 2021 Dataset)
 
 We also provide pretrained DCT models. You can download the models if you do not want to train DCT.
 
