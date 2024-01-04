@@ -52,7 +52,7 @@ pip install -r requirements/build.txt
 
 ## Data Preparation
 
-- Download [Global Wheat Head Detection Dataset 2021 (GWHD 2021)](https://www.kaggle.com/datasets/bendvd/global-wheat-challenge-2021). We expect the direcory structure to be as follow:
+- Download [Global Wheat Head Detection Dataset 2021 (GWHD 2021)](https://www.kaggle.com/datasets/bendvd/global-wheat-challenge-2021). We expect the directory structure to be as follows:
 
 ```
 DCT
@@ -137,6 +137,6 @@ If you find this work or code useful for your research, please consider citing:
 
 ```
 
-## Acknowlegdement
+## Acknowledgment
 
 This repository is based on [Scaled-YOLOv4](https://github.com/WongKinYiu/ScaledYOLOv4).
